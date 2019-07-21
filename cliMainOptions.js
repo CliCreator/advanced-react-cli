@@ -10,7 +10,7 @@ const TypeScript = require('./cliRoutes/TypeScript/index')
 module.exports = answers => {
   switch (answers.installation) {
     case 'CreateReactApp':
-      new CRA().CRAPrompt()
+      CRA.CRAPrompt()
       break
 
     case 'ReactComponent':

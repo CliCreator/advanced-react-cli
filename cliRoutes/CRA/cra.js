@@ -1,10 +1,7 @@
 const inquirer = require('inquirer')
 
 // Cli Model
-const cliModel = require('../../cliModel')
-const addPackage = cliModel.addPackage
-const installFolder = cliModel.installFolder
-const YarnOrNpm = cliModel.YarnOrNpm
+const { addPackage, installFolder, YarnOrNpm } = require('../../cliModel')
 
 //Import CRA Install Dependencies
 const installAll = require('./installAll')
@@ -19,7 +16,7 @@ const prompt = inquirer.createPromptModule()
   Installs a Boilerplate react application using Create-react-app + optional packages
 
 */
-module.exports = class CRA {
+module.exports = {
   CRAPrompt () {
     prompt(YarnOrNpm).then(({ packageManager }) => {
       const packageInstaller = packageManager
