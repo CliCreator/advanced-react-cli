@@ -1,3 +1,18 @@
+module.exports.generalQuestions = [
+  {
+    type: 'list',
+    name: 'packageManager',
+    message: 'Would you like to install using Yarn or NPM?',
+    choices: ['Yarn', 'NPM']
+  },
+  {
+    type: 'input',
+    name: 'folderName',
+    message:
+      'Please input the name of the folder you would like to create for your project? (Enter a . if for current directory)'
+  }
+]
+
 module.exports.cliCommand = [
   {
     type: 'list',
