@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-
+//tyest
 const [...args] = process.argv
 
 // console.log(`folder name ${args[2]}`);
